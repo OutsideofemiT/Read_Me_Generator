@@ -25,7 +25,12 @@ const questions = [
   { type: 'input', name: 'test', message: 'Please provide test instructions.' },
 
   // Asking for license information
-  { type: 'input', name: 'license', message: 'Please provide license information.' },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your project:',
+    choices: ['MIT', 'GPLv3', 'Apache 2.0', 'BSD 3-Clause', 'None']
+  },
 
   // Asking for GitHub username
   { type: 'input', name: 'github', message: 'Please provide your GitHub username.' },
@@ -36,8 +41,22 @@ const questions = [
 
 // Function to generate the README content based on user input
 function generateReadme(answers) {
+  // Mapping licenses to badge URLs
+  const licenseBadges = {
+    'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
+    'GPLv3': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+    'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
+    'BSD 3-Clause': 'https://img.shields.io/badge/License-BSD_3--Clause-orange.svg',
+    'None': ''
+  };
+
+  // Getting the badge URL for the selected license
+  const licenseBadge = licenseBadges[answers.license];
+
   return `
 # ${answers.title}
+
+${licenseBadge ? `![License](${licenseBadge})` : ''}
 
 ## Description
 ${answers.description}
@@ -57,7 +76,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-This project is licensed under the ${answers.license} license.
+${answers.license !== 'None' ? `This project is licensed under the ${answers.license} license.` : 'This project does not have a license.'}
 
 ## Contributing
 ${answers.contribution}
