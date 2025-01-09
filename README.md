@@ -32,4 +32,5 @@ To run tests, use the following command: npm test (Make Sure ALL tests pass befo
 ## Questions
 For any questions, please contact me at carmenwh33l3r@gmail.com. You can also find more of my work at [GitHub](https://github.com/Oustsideofemit).
 
-## Code source #45-50, assistance 
+## Note
+Code source #45-50 license links, assistance Co-Pilot.
