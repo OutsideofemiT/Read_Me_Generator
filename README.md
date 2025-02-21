@@ -17,6 +17,11 @@ A command-lline tool to assist developers with creating a README file for their 
 ## Installation
 1. Clone the repository: git clone git@github.com:OutsideofemiT/Read_Me_Generator.git 2. Navigate to the project directory: cd Read_Me_Generator 3. Install dependencies: npm install
 
+## Video of Deployed README Generator
+
+https://github.com/user-attachments/assets/f4ba2950-34c8-4cb8-94ef-7f29445c0635
+
+
 ## Usage
 To use the README generator, run the following command in your terminal: node index.js. Follow the prompts to complete your README file.
 
