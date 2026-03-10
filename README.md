@@ -29,7 +29,7 @@ To use the README generator, run the following command in your terminal: node in
 This project is licensed under the MIT license.
 
 ## Contributing
-We welcome contributions! Please follow these guidelines: 1. Fork the repository 2. Create a new branch for your feture or bugfix: git checkout -b feature-name 3. Commit your changes: git push commit -m'Add a new feauture' 4. Push to the branch: git push origin feature-name 5. Open pull request  and describe your changes
+We welcome contributions! Please follow these guidelines: 1. Fork the repository 2. Create a new branch for your feature or bugfix: git checkout -b feature-name 3. Commit your changes: git push commit -m'Add a new feauture' 4. Push to the branch: git push origin feature-name 5. Open pull request  and describe your changes
 
 ## Tests
 To run tests, use the following command: npm test (Make Sure ALL tests pass before opening up a pull request)
