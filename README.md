@@ -15,7 +15,9 @@ A command-lline tool to assist developers with creating a README file for their 
 6. [Questions](#questions)
 
 ## Installation
-1. Clone the repository: git clone [git@github.com:OutsideofemiT/Read_Me_Generator.git](https://github.com/OutsideofemiT/Read_Me_Generator.git) 2. Navigate to the project directory: cd Read_Me_Generator 3. Install dependencies: npm install
+1. Clone the repository: git clone [git@github.com:OutsideofemiT/Read_Me_Generator.git](https://github.com/OutsideofemiT/Read_Me_Generator.git)
+2. Navigate to the project directory: cd Read_Me_Generator
+3. Install dependencies: npm install
 
 ## Video of Deployed README Generator
 
